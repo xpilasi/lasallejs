@@ -4,7 +4,7 @@ console.log('Fetching');
 
 
 const API_KEY = 'ba7b4f96502b43c2b407aead54c9a8d6'
-const DB = `https://newsapi.org/v2/everything?q=Apple&from=2024-10-07&sortBy=popularity&apiKey=${API_KEY}`
+// const DB = `https://newsapi.org/v2/everything?q=Apple&from=2024-10-07&sortBy=popularity&apiKey=${API_KEY}`
 const DB_1 = `https://newsapi.org/v2/everything?q=world&apiKey=${API_KEY}`
 
 

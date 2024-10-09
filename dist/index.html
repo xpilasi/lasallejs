@@ -53,7 +53,7 @@
         </ul>
         <div class="flex w-52  items-center justify-end  ">
 
-          <p class="">21 de octubre 2024</p>
+          <p id="date-time"></p>
         </div>
         
       </nav>
@@ -178,25 +178,24 @@
 
     <section id="section-newsletter" class="flex flex-col justify-center items-center min-h-screen bg-blue-400 lg:px-20 md:px-16 px-8">
       <!-- Newsletter -->
+      <h2 class="text-3xl text-white font-black pb-2">Newsletter</h2>
+      <h3 class="text-white font-extralight text-md pb-10">Suscríbete a nuestro newsletter y entérate de todas las noticias y actualidad.</h3>
       
-        <h2 class="  text-3xl text-white font-black  pb-2 ">Newsletter</h2>
-        <h3 class="text-white font-extralight text-md pb-10 ">Suscríbete a nuestro newsletter y entérate de todas las noticias y actualidad.</h3>
-        <div id="form" class="flex justify-center  ">
-          <form action="" class="flex flex-row">
-            <input id="name-form" type="text" placeholder="name" class="py-3 pl-5">
-            <input id="last-name-form"  type="text" placeholder="lastName" class="py-3 pl-5">
-            <input id="email-form"  type="email" placeholder="your@email.com" class="py-3 pl-5">
-            <div 
-
-            onclick=enviarFormulario()
+      <div id="form" class="flex justify-center">
+        <form id="suscription-form" action="" class="flex flex-col lg:flex-row" onsubmit="return enviarFormulario(event)">
+          <input id="name-form" type="text" placeholder="Nombre" class="py-3 pl-5 border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          <input id="last-name-form" type="text" placeholder="Apellido" class="py-3 pl-5 border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          <input id="email-form" type="email" placeholder="your@email.com" class="py-3 pl-5 border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+          
+          <button 
             id="button-suscribe" 
-            class="bg-red-500 cursor-pointer w-52 text-white text-center py-3 hover:bg-red-400 transition-all duration-500">Suscríbete</div>
-
-          </form>
-  
-        </div>
-
-    
+            type="submit" 
+            class="bg-red-500 cursor-pointer w-52 text-white text-center py-3 hover:bg-red-400 transition-all duration-500">
+            Suscríbete
+          </button>
+        </form>
+      </div>
+    </section>
     </section>
     <div
         id="top-globalnews"
@@ -221,9 +220,7 @@
             <path d="M23.5 11L0 49L10.5 11H23.5Z" fill="white" />
           </svg>
         </div>
-        <!-- <div>
-          <p>21 de octubre 2024</p>
-        </div> -->
+        
         </div>
 
     <footer class="bg-black text-white py-6">
@@ -261,6 +258,7 @@
   </body>
 
   <!-- Llamado a los scripts JS -->
+   <script src="../js/fechas.js"></script>
   <script src="../js/fetch.js"></script>
   <script src="../js/menu.js"></script>
   <script src="../js/form.js"></script>
