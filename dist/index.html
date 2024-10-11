@@ -1,268 +1,348 @@
 <!DOCTYPE html>
 <html style="scroll-behavior: smooth;">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="output.css" rel="stylesheet" />
-    <title>- GlobalNews -</title>
-  </head>
-  <body id="body" class=" text-black  ">
- 
-    <header class="">
 
-      <nav id='nav-globalnews'
-      class="drop-shadow-md items-center text-sm fixed top-0 h-14 font-bold text-slate-600 bg-white transition-all ease-in-out duration-500 w-full flex flex-row justify-between lg:px-20 md:px-16 px-8">
-        <div class="flex flex-row  items-center  ">
-          <svg
-          class="w-44"
-          width="400"
-          height=""
-          viewBox="0 0 408 61"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>- GlobalNews -</title>
+</head>
+
+<body id="body" class=" text-black  ">
+
+  <header class="">
+
+    <nav id='nav-globalnews'
+      class="z-50 drop-shadow-md items-center text-sm fixed top-0 h-14 font-bold text-slate-600 bg-white transition-all ease-in-out duration-500 w-full flex flex-row justify-between lg:px-20 md:px-16 px-8">
+      <div class="flex flex-row  items-center">
+        <svg class="w-44" width="400" height="" viewBox="0 0 408 61" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M69.9588 24.6392C69.8049 24.0118 69.5623 23.4614 69.2308 22.9879C68.8994 22.5026 68.4851 22.0942 67.9879 21.7628C67.5026 21.4195 66.9344 21.165 66.2834 20.9993C65.6442 20.8217 64.9399 20.733 64.1705 20.733C62.5133 20.733 61.0987 21.1295 59.9268 21.9226C58.7668 22.7157 57.879 23.858 57.2635 25.3494C56.6598 26.8409 56.358 28.6402 56.358 30.7472C56.358 32.8778 56.648 34.7008 57.228 36.2159C57.808 37.7311 58.6721 38.8911 59.8203 39.696C60.9685 40.5009 62.3949 40.9034 64.0994 40.9034C65.6027 40.9034 66.8516 40.6844 67.8459 40.2464C68.852 39.8085 69.6037 39.187 70.1009 38.3821C70.598 37.5772 70.8466 36.6302 70.8466 35.5412L72.5511 35.7188H64.2415V28.6875H80.3636V33.7301C80.3636 37.0445 79.6593 39.8795 78.2507 42.2351C76.8539 44.5788 74.9245 46.3781 72.4624 47.6328C70.0121 48.8757 67.2008 49.4972 64.0284 49.4972C60.4891 49.4972 57.3819 48.7455 54.7067 47.2422C52.0315 45.7389 49.9422 43.5964 48.4389 40.8146C46.9474 38.0329 46.2017 34.7244 46.2017 30.8892C46.2017 27.8826 46.6574 25.2192 47.5689 22.8991C48.4922 20.5791 49.7706 18.62 51.4041 17.022C53.0376 15.4122 54.9257 14.1989 57.0682 13.3821C59.2107 12.5535 61.5071 12.1392 63.9574 12.1392C66.1117 12.1392 68.1122 12.447 69.9588 13.0625C71.8172 13.6662 73.4567 14.5303 74.8771 15.6548C76.3094 16.7675 77.4635 18.0874 78.3395 19.6143C79.2154 21.1413 79.7481 22.8163 79.9375 24.6392H69.9588ZM84.9668 49V12.6364H94.839V41.0455H109.541V49H84.9668ZM147.343 30.8182C147.343 34.8665 146.555 38.2815 144.981 41.0632C143.407 43.8331 141.282 45.9342 138.607 47.3665C135.932 48.7869 132.949 49.4972 129.658 49.4972C126.343 49.4972 123.349 48.781 120.673 47.3487C118.01 45.9046 115.891 43.7976 114.317 41.0277C112.754 38.246 111.973 34.8428 111.973 30.8182C111.973 26.7699 112.754 23.3608 114.317 20.5909C115.891 17.8092 118.01 15.7081 120.673 14.2876C123.349 12.8553 126.343 12.1392 129.658 12.1392C132.949 12.1392 135.932 12.8553 138.607 14.2876C141.282 15.7081 143.407 17.8092 144.981 20.5909C146.555 23.3608 147.343 26.7699 147.343 30.8182ZM137.186 30.8182C137.186 28.6402 136.896 26.8054 136.316 25.3139C135.748 23.8106 134.902 22.6742 133.777 21.9048C132.664 21.1236 131.291 20.733 129.658 20.733C128.024 20.733 126.645 21.1236 125.521 21.9048C124.408 22.6742 123.562 23.8106 122.982 25.3139C122.414 26.8054 122.129 28.6402 122.129 30.8182C122.129 32.9962 122.414 34.8369 122.982 36.3402C123.562 37.8317 124.408 38.968 125.521 39.7493C126.645 40.5187 128.024 40.9034 129.658 40.9034C131.291 40.9034 132.664 40.5187 133.777 39.7493C134.902 38.968 135.748 37.8317 136.316 36.3402C136.896 34.8369 137.186 32.9962 137.186 30.8182ZM151.91 49V12.6364H167.677C170.447 12.6364 172.773 13.0092 174.655 13.755C176.549 14.5007 177.975 15.5542 178.934 16.9155C179.905 18.2768 180.39 19.8807 180.39 21.7273C180.39 23.0649 180.094 24.2841 179.502 25.3849C178.922 26.4858 178.106 27.4091 177.052 28.1548C175.999 28.8887 174.768 29.3977 173.359 29.6818V30.0369C174.922 30.0961 176.342 30.4927 177.62 31.2266C178.899 31.9486 179.917 32.9489 180.674 34.2273C181.432 35.4938 181.811 36.9853 181.811 38.7017C181.811 40.6903 181.29 42.46 180.248 44.0107C179.218 45.5613 177.751 46.7805 175.845 47.6683C173.939 48.5561 171.666 49 169.027 49H151.91ZM161.782 41.1165H166.399C168.056 41.1165 169.299 40.8087 170.127 40.1932C170.956 39.5658 171.37 38.6425 171.37 37.4233C171.37 36.571 171.175 35.849 170.784 35.2571C170.394 34.6652 169.837 34.2154 169.115 33.9077C168.405 33.5999 167.547 33.446 166.541 33.446H161.782V41.1165ZM161.782 27.3381H165.831C166.695 27.3381 167.458 27.2019 168.121 26.9297C168.784 26.6574 169.299 26.2668 169.666 25.7578C170.045 25.237 170.234 24.6037 170.234 23.858C170.234 22.7334 169.832 21.8752 169.027 21.2834C168.222 20.6797 167.204 20.3778 165.973 20.3778H161.782V27.3381ZM194.755 49H184.101L196.104 12.6364H209.598L221.601 49H210.948L202.993 22.6506H202.709L194.755 49ZM192.766 34.6534H212.794V42.0398H192.766V34.6534ZM225.104 49V12.6364H234.976V41.0455H249.677V49H225.104ZM285.131 12.6364V49H276.892L263.753 29.8949H263.54V49H253.668V12.6364H262.049L274.975 31.6705H275.259V12.6364H285.131ZM289.801 49V12.6364H316.008V20.5909H299.673V26.8409H314.659V34.7955H299.673V41.0455H315.937V49H289.801ZM330.137 49L319.413 12.6364H330.421L335.393 35.0085H335.677L341.572 12.6364H350.237L356.132 35.0795H356.416L361.387 12.6364H372.396L361.671 49H352.225L346.046 28.6875H345.762L339.583 49H330.137ZM394.608 24C394.513 22.8163 394.07 21.893 393.276 21.2301C392.495 20.5672 391.306 20.2358 389.708 20.2358C388.69 20.2358 387.855 20.3601 387.204 20.6087C386.565 20.8454 386.091 21.1709 385.784 21.5852C385.476 21.9995 385.316 22.473 385.304 23.0057C385.28 23.4437 385.357 23.8402 385.535 24.1953C385.724 24.5386 386.02 24.8523 386.423 25.1364C386.825 25.4086 387.34 25.6572 387.968 25.8821C388.595 26.107 389.341 26.3082 390.205 26.4858L393.188 27.125C395.2 27.5511 396.922 28.1134 398.355 28.8118C399.787 29.5102 400.959 30.3329 401.87 31.2798C402.782 32.215 403.45 33.2685 403.877 34.4403C404.315 35.6122 404.539 36.8906 404.551 38.2756C404.539 40.6667 403.942 42.6908 402.758 44.348C401.574 46.0052 399.882 47.2659 397.68 48.13C395.49 48.9941 392.856 49.4261 389.779 49.4261C386.618 49.4261 383.86 48.9586 381.504 48.0234C379.161 47.0883 377.338 45.6501 376.036 43.7088C374.745 41.7557 374.094 39.258 374.083 36.2159H383.458C383.517 37.3286 383.795 38.2637 384.292 39.0213C384.789 39.7789 385.488 40.353 386.387 40.7436C387.299 41.1342 388.382 41.3295 389.637 41.3295C390.69 41.3295 391.572 41.1993 392.282 40.9389C392.992 40.6785 393.531 40.3175 393.898 39.8558C394.265 39.3942 394.454 38.8674 394.466 38.2756C394.454 37.7192 394.271 37.2339 393.916 36.8196C393.572 36.3935 393.004 36.0147 392.211 35.6832C391.418 35.34 390.347 35.0204 388.997 34.7244L385.375 33.9432C382.155 33.2448 379.616 32.0788 377.758 30.4453C375.911 28.8 374.994 26.5568 375.006 23.7159C374.994 21.4077 375.61 19.3894 376.852 17.6612C378.107 15.9212 379.841 14.5658 382.055 13.5952C384.28 12.6245 386.831 12.1392 389.708 12.1392C392.643 12.1392 395.182 12.6304 397.325 13.6129C399.467 14.5954 401.119 15.9804 402.279 17.7678C403.45 19.5433 404.042 21.6207 404.054 24H394.608Z"
-            fill="#EF4444"
-          />
+            fill="#EF4444" />
           <path d="M18.5 49L42 11L31.5 49L18.5 49Z" fill="#EF4444" />
           <path d="M42 11L18.5 49L29 11H42Z" fill="#EF4444" />
           <path d="M0 49L23.5 11L13 49L0 49Z" fill="#EF4444" />
           <path d="M23.5 11L0 49L10.5 11H23.5Z" fill="#EF4444" />
         </svg>
-        
+
+      </div>
+
+      <ul class="font-light lg:flex flex-row justify-center items-center h-full hidden ">
+        <li onclick=checkScroll() id="mas-vistos"
+          class='hover:cursor-pointer hover:border-b-4 hover:border-red-400 transition-all duration-200 px-5 py-3 font-bold hover:text-red-500'>
+          <a href="#section-lo-mas-visto">Lo más visto</a>
+        </li>
+        <li id="europa"
+          class='hover:cursor-pointer hover:border-b-4 hover:border-red-400 transition-all duration-200 px-5 py-3 font-bold hover:text-red-500'>
+          <a href="#section-noticias-de-europa">Europa</a>
+
+        </li>
+        <li id="internacional"
+          class='hover:cursor-pointer hover:border-b-4 hover:border-red-400 transition-all duration-200 px-5 py-3 font-bold hover:text-red-500'>
+          <a href="#section-noticias-internacionales">Internacional
+          </a>
+        </li>
+        <li id="newsletter"
+          class='hover:cursor-pointer hover:border-b-4 hover:border-red-400 transition-all duration-200 px-5 py-3 font-bold hover:text-red-500'>
+          <a href="#section-newsletter">Newsletter
+          </a>
+        </li>
+
+      </ul>
+      <div class="hidden lg:flex w-52  items-center justify-end  ">
+
+        <p class="">21 de octubre 2024</p>
+      </div>
+      <!-- Menu -->
+      <div id="menu-hamburguesa"
+        class='flex flex-col items-end justify-center align-middle  z-50 w-8 h-full  hover:cursor-pointer  lg:hidden   '
+        onclick=handleMenu()>
+
+
+        <!-- Línea superior menu -->
+        <span class='absolute top-4 w-8   h-1 bg-red-500 transition-all duration-300 ease-in-out transform'></span>
+        <!-- Línea inferior menu -->
+        <span class='absolute top-7 w-4 h-1  bg-red-500 transition-all duration-300 ease-in-out transform'></span>
+
+      </div>
+
+    </nav>
+  </header>
+  <!-- lo mas visto -->
+  <section id='section-lo-mas-visto' class=" pt-[56px] lg:px-20 md:px-16 px-8 bg-slate-100">
+
+
+    <article class="py-10 md:py-14">
+      <h2 class="text-3xl font-black pb-5">Lo más visto</h2>
+
+      <div id='contenedor-noticias-mas-vistas' class="grid grid-cols-1 gap-6 lg:grid-cols-4 md:grid-cols-2">
+
+        <div class="flex justify-center h-52 items-center w-full bg-white ">
+          <img src="../assets/img/22.gif" alt="" class="w-20" />
+        </div>
+        <div class="flex justify-center h-52 items-center w-full bg-white ">
+          <img src="../assets/img/22.gif" alt="" class="w-20" />
+        </div>
+        <div class="flex justify-center h-52 items-center w-full bg-white ">
+          <img src="../assets/img/22.gif" alt="" class="w-20" />
+        </div>
+        <div class="flex justify-center h-52 items-center w-full bg-white ">
+          <img src="../assets/img/22.gif" alt="" class="w-20" />
+        </div>
+        <div class="flex justify-center h-52 items-center w-full bg-white ">
+          <img src="../assets/img/22.gif" alt="" class="w-20" />
+        </div>
+        <div class="flex justify-center h-52 items-center w-full bg-white ">
+          <img src="../assets/img/22.gif" alt="" class="w-20" />
+        </div>
+        <div class="flex justify-center h-52 items-center w-full bg-white ">
+          <img src="../assets/img/22.gif" alt="" class="w-20" />
+        </div>
+        <div class="flex justify-center h-52 items-center w-full bg-white ">
+          <img src="../assets/img/22.gif" alt="" class="w-20" />
         </div>
 
-        <ul class="font-light lg:flex flex-row justify-center items-center h-full hidden " >
-          <li onclick=checkScroll() id="mas-vistos" class='hover:cursor-pointer hover:border-b-4 hover:border-red-400 transition-all duration-200 px-5 py-3 font-bold hover:text-red-500'>
-            <a href="#section-lo-mas-visto">Lo más visto</a> 
-          </li>
-          <li id="europa" class='hover:cursor-pointer hover:border-b-4 hover:border-red-400 transition-all duration-200 px-5 py-3 font-bold hover:text-red-500'>
-            <a href="#section-noticias-de-europa">Europa</a> 
-            
-          </li>
-          <li id="internacional" class='hover:cursor-pointer hover:border-b-4 hover:border-red-400 transition-all duration-200 px-5 py-3 font-bold hover:text-red-500'>
-             <a href="#section-noticias-internacionales">Internacional
-            </a> 
-          </li>
-          <li id="newsletter" class='hover:cursor-pointer hover:border-b-4 hover:border-red-400 transition-all duration-200 px-5 py-3 font-bold hover:text-red-500'>
-             <a href="#section-newsletter">Newsletter
-            </a> 
-          </li>
-          
-        </ul>
-        <div class="flex w-52  items-center justify-end  ">
+      </div>
+    </article>
 
-          <p class="">21 de octubre 2024</p>
-        </div>
-        
-      </nav>
-    </header>
-    <!-- lo mas visto -->
-    <section id='section-lo-mas-visto' class="  min-h-[calc(100vh-6rem)] pt-[56px] lg:px-20 md:px-16 px-8 bg-slate-100">
-      
-        
-      <article class="   py-5">
-        <h2 class="  text-3xl font-black pb-5">Lo más visto</h2>
-        
-          <div id='contenedor-noticias-mas-vistas'class="grid grid-cols-1  lg:grid-cols-4 md:grid-cols-2 gap-2  ">
+  </section>
 
-              <div class="flex justify-center h-52 items-center w-full bg-white ">
-                <img src="../assets/img/22.gif" alt="" class="w-20" />
-              </div>
-              <div class="flex justify-center h-52 items-center w-full bg-white ">
-                <img src="../assets/img/22.gif" alt="" class="w-20" />
-              </div>
-              <div class="flex justify-center h-52 items-center w-full bg-white ">
-                <img src="../assets/img/22.gif" alt="" class="w-20" />
-              </div>
-              <div class="flex justify-center h-52 items-center w-full bg-white ">
-                <img src="../assets/img/22.gif" alt="" class="w-20" />
-              </div>
-              <div class="flex justify-center h-52 items-center w-full bg-white ">
-                <img src="../assets/img/22.gif" alt="" class="w-20" />
-              </div>
-              <div class="flex justify-center h-52 items-center w-full bg-white ">
-                <img src="../assets/img/22.gif" alt="" class="w-20" />
-              </div>
-              <div class="flex justify-center h-52 items-center w-full bg-white ">
-                <img src="../assets/img/22.gif" alt="" class="w-20" />
-              </div>
-              <div class="flex justify-center h-52 items-center w-full bg-white ">
-                <img src="../assets/img/22.gif" alt="" class="w-20" />
-              </div>
-              
+  <!-- noticias de Europa -->
+  <section id='section-noticias-de-europa' class="  min-h-screen pt-[40px] lg:px-20 md:px-16 px-8 bg-slate-100">
+
+
+    <article class="py-5">
+      <h2 class="text-3xl font-black pb-5">Noticias de Europa</h2>
+
+      <div id='contenedor-noticias-europa' class="grid grid-cols-1 gap-6 lg:grid-cols-4 md:grid-cols-2">
+
+        <div class="lg:grid item ">
+          <div class="flex justify-center lg:h-[392px] h-72 items-center w-full bg-white ">
+            <img src="../assets/img/22.gif" alt="" class="w-20" />
           </div>
-      </article>
-
-    </section>
-
-    <!-- noticias de Europa -->
-    <section id='section-noticias-de-europa' class="  min-h-screen pt-[40px] lg:px-20 md:px-16 px-8 bg-slate-100">
-      
-        
-      <article class="   py-5">
-        <h2 class="  text-3xl font-black pb-5">Noticias de Europa</h2>
-        
-          <div id='contenedor-noticias-mas-vistas'class="grid grid-cols-1  lg:grid-cols-2 md:grid-cols-2 gap-2  ">
-
-              <div class="lg:grid item ">
-                <div class="flex justify-center lg:h-[392px] h-72 items-center w-full bg-white ">
-                  <img src="../assets/img/22.gif" alt="" class="w-20" />
-                </div>
-              </div>
-              <div class="lg:grid item lg:grid-cols-2 grid gap-2">
-                <div class="flex justify-center lg:h-48 h-72 items-center w-full bg-white ">
-                  <img src="../assets/img/22.gif" alt="" class="w-20" />
-                </div>
-                <div class="flex justify-center lg:h-48 h-72  items-center w-full bg-white ">
-                  <img src="../assets/img/22.gif" alt="" class="w-20" />
-                </div>
-                <div class="flex justify-center lg:h-48 h-72  items-center w-full bg-white ">
-                  <img src="../assets/img/22.gif" alt="" class="w-20" />
-                </div>
-                <div class="flex justify-center lg:h-48 h-72  items-center w-full bg-white ">
-                  <img src="../assets/img/22.gif" alt="" class="w-20" />
-                </div>
-              </div>
-              
-              
-              
+        </div>
+        <div class="lg:grid item lg:grid-cols-2 grid gap-2">
+          <div class="flex justify-center lg:h-48 h-72 items-center w-full bg-white ">
+            <img src="../assets/img/22.gif" alt="" class="w-20" />
           </div>
-      </article>
-
-    </section>
-
-    
-    
-
-    <!-- noticias internacionales-->
-    <section id='section-noticias-internacionales' class="  min-h-screen pt-[40px] lg:px-20 md:px-16 px-8 bg-slate-100">
-      
-        
-      <article class="   py-5">
-        <h2 class="  text-3xl font-black pb-5">Noticias Internacionales</h2>
-        
-          <div id='contenedor-noticias-mas-vistas'class="grid grid-cols-1  lg:grid-cols-4 md:grid-cols-2 gap-2  ">
-
-              <div class="flex justify-center h-52 items-center w-full bg-white ">
-                <img src="../assets/img/22.gif" alt="" class="w-20" />
-              </div>
-              <div class="flex justify-center h-52 items-center w-full bg-white ">
-                <img src="../assets/img/22.gif" alt="" class="w-20" />
-              </div>
-              <div class="flex justify-center h-52 items-center w-full bg-white ">
-                <img src="../assets/img/22.gif" alt="" class="w-20" />
-              </div>
-              <div class="flex justify-center h-52 items-center w-full bg-white ">
-                <img src="../assets/img/22.gif" alt="" class="w-20" />
-              </div>
-              <div class="flex justify-center h-52 items-center w-full bg-white ">
-                <img src="../assets/img/22.gif" alt="" class="w-20" />
-              </div>
-              <div class="flex justify-center h-52 items-center w-full bg-white ">
-                <img src="../assets/img/22.gif" alt="" class="w-20" />
-              </div>
-              <div class="flex justify-center h-52 items-center w-full bg-white ">
-                <img src="../assets/img/22.gif" alt="" class="w-20" />
-              </div>
-              <div class="flex justify-center h-52 items-center w-full bg-white ">
-                <img src="../assets/img/22.gif" alt="" class="w-20" />
-              </div>
-              
+          <div class="flex justify-center lg:h-48 h-72  items-center w-full bg-white ">
+            <img src="../assets/img/22.gif" alt="" class="w-20" />
           </div>
-      </article>
-
-    </section>
-
-
-    <section id="section-newsletter" class="flex flex-col justify-center items-center min-h-screen bg-blue-400 lg:px-20 md:px-16 px-8">
-      <!-- Newsletter -->
-      
-        <h2 class="  text-3xl text-white font-black  pb-2 ">Newsletter</h2>
-        <h3 class="text-white font-extralight text-md pb-10 ">Suscríbete a nuestro newsletter y entérate de todas las noticias y actualidad.</h3>
-        <div id="form" class="flex justify-center  ">
-          <form action="" class="flex flex-row">
-            <input id="name-form" type="text" placeholder="name" class="py-3 pl-5">
-            <input id="last-name-form"  type="text" placeholder="lastName" class="py-3 pl-5">
-            <input id="email-form"  type="email" placeholder="your@email.com" class="py-3 pl-5">
-            <div 
-
-            onclick=enviarFormulario()
-            id="button-suscribe" 
-            class="bg-red-500 cursor-pointer w-52 text-white text-center py-3 hover:bg-red-400 transition-all duration-500">Suscríbete</div>
-
-          </form>
-  
+          <div class="flex justify-center lg:h-48 h-72  items-center w-full bg-white ">
+            <img src="../assets/img/22.gif" alt="" class="w-20" />
+          </div>
+          <div class="flex justify-center lg:h-48 h-72  items-center w-full bg-white ">
+            <img src="../assets/img/22.gif" alt="" class="w-20" />
+          </div>
         </div>
 
-    
-    </section>
-    <div
-        id="top-globalnews"
-        class="text-white font-bold bg-red-500 h-20 flex flex-row justify-center items-center lg:px-20 md:px-16 px-8 transition-all duration-700 "
-      >
-        <div class="flex">
-          <svg
-            class="w-52"
-            width="408"
-            height="61"
-            viewBox="0 0 408 61"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M69.9588 24.6392C69.8049 24.0118 69.5623 23.4614 69.2308 22.9879C68.8994 22.5026 68.4851 22.0942 67.9879 21.7628C67.5026 21.4195 66.9344 21.165 66.2834 20.9993C65.6442 20.8217 64.9399 20.733 64.1705 20.733C62.5133 20.733 61.0987 21.1295 59.9268 21.9226C58.7668 22.7157 57.879 23.858 57.2635 25.3494C56.6598 26.8409 56.358 28.6402 56.358 30.7472C56.358 32.8778 56.648 34.7008 57.228 36.2159C57.808 37.7311 58.6721 38.8911 59.8203 39.696C60.9685 40.5009 62.3949 40.9034 64.0994 40.9034C65.6027 40.9034 66.8516 40.6844 67.8459 40.2464C68.852 39.8085 69.6037 39.187 70.1009 38.3821C70.598 37.5772 70.8466 36.6302 70.8466 35.5412L72.5511 35.7188H64.2415V28.6875H80.3636V33.7301C80.3636 37.0445 79.6593 39.8795 78.2507 42.2351C76.8539 44.5788 74.9245 46.3781 72.4624 47.6328C70.0121 48.8757 67.2008 49.4972 64.0284 49.4972C60.4891 49.4972 57.3819 48.7455 54.7067 47.2422C52.0315 45.7389 49.9422 43.5964 48.4389 40.8146C46.9474 38.0329 46.2017 34.7244 46.2017 30.8892C46.2017 27.8826 46.6574 25.2192 47.5689 22.8991C48.4922 20.5791 49.7706 18.62 51.4041 17.022C53.0376 15.4122 54.9257 14.1989 57.0682 13.3821C59.2107 12.5535 61.5071 12.1392 63.9574 12.1392C66.1117 12.1392 68.1122 12.447 69.9588 13.0625C71.8172 13.6662 73.4567 14.5303 74.8771 15.6548C76.3094 16.7675 77.4635 18.0874 78.3395 19.6143C79.2154 21.1413 79.7481 22.8163 79.9375 24.6392H69.9588ZM84.9668 49V12.6364H94.839V41.0455H109.541V49H84.9668ZM147.343 30.8182C147.343 34.8665 146.555 38.2815 144.981 41.0632C143.407 43.8331 141.282 45.9342 138.607 47.3665C135.932 48.7869 132.949 49.4972 129.658 49.4972C126.343 49.4972 123.349 48.781 120.673 47.3487C118.01 45.9046 115.891 43.7976 114.317 41.0277C112.754 38.246 111.973 34.8428 111.973 30.8182C111.973 26.7699 112.754 23.3608 114.317 20.5909C115.891 17.8092 118.01 15.7081 120.673 14.2876C123.349 12.8553 126.343 12.1392 129.658 12.1392C132.949 12.1392 135.932 12.8553 138.607 14.2876C141.282 15.7081 143.407 17.8092 144.981 20.5909C146.555 23.3608 147.343 26.7699 147.343 30.8182ZM137.186 30.8182C137.186 28.6402 136.896 26.8054 136.316 25.3139C135.748 23.8106 134.902 22.6742 133.777 21.9048C132.664 21.1236 131.291 20.733 129.658 20.733C128.024 20.733 126.645 21.1236 125.521 21.9048C124.408 22.6742 123.562 23.8106 122.982 25.3139C122.414 26.8054 122.129 28.6402 122.129 30.8182C122.129 32.9962 122.414 34.8369 122.982 36.3402C123.562 37.8317 124.408 38.968 125.521 39.7493C126.645 40.5187 128.024 40.9034 129.658 40.9034C131.291 40.9034 132.664 40.5187 133.777 39.7493C134.902 38.968 135.748 37.8317 136.316 36.3402C136.896 34.8369 137.186 32.9962 137.186 30.8182ZM151.91 49V12.6364H167.677C170.447 12.6364 172.773 13.0092 174.655 13.755C176.549 14.5007 177.975 15.5542 178.934 16.9155C179.905 18.2768 180.39 19.8807 180.39 21.7273C180.39 23.0649 180.094 24.2841 179.502 25.3849C178.922 26.4858 178.106 27.4091 177.052 28.1548C175.999 28.8887 174.768 29.3977 173.359 29.6818V30.0369C174.922 30.0961 176.342 30.4927 177.62 31.2266C178.899 31.9486 179.917 32.9489 180.674 34.2273C181.432 35.4938 181.811 36.9853 181.811 38.7017C181.811 40.6903 181.29 42.46 180.248 44.0107C179.218 45.5613 177.751 46.7805 175.845 47.6683C173.939 48.5561 171.666 49 169.027 49H151.91ZM161.782 41.1165H166.399C168.056 41.1165 169.299 40.8087 170.127 40.1932C170.956 39.5658 171.37 38.6425 171.37 37.4233C171.37 36.571 171.175 35.849 170.784 35.2571C170.394 34.6652 169.837 34.2154 169.115 33.9077C168.405 33.5999 167.547 33.446 166.541 33.446H161.782V41.1165ZM161.782 27.3381H165.831C166.695 27.3381 167.458 27.2019 168.121 26.9297C168.784 26.6574 169.299 26.2668 169.666 25.7578C170.045 25.237 170.234 24.6037 170.234 23.858C170.234 22.7334 169.832 21.8752 169.027 21.2834C168.222 20.6797 167.204 20.3778 165.973 20.3778H161.782V27.3381ZM194.755 49H184.101L196.104 12.6364H209.598L221.601 49H210.948L202.993 22.6506H202.709L194.755 49ZM192.766 34.6534H212.794V42.0398H192.766V34.6534ZM225.104 49V12.6364H234.976V41.0455H249.677V49H225.104ZM285.131 12.6364V49H276.892L263.753 29.8949H263.54V49H253.668V12.6364H262.049L274.975 31.6705H275.259V12.6364H285.131ZM289.801 49V12.6364H316.008V20.5909H299.673V26.8409H314.659V34.7955H299.673V41.0455H315.937V49H289.801ZM330.137 49L319.413 12.6364H330.421L335.393 35.0085H335.677L341.572 12.6364H350.237L356.132 35.0795H356.416L361.387 12.6364H372.396L361.671 49H352.225L346.046 28.6875H345.762L339.583 49H330.137ZM394.608 24C394.513 22.8163 394.07 21.893 393.276 21.2301C392.495 20.5672 391.306 20.2358 389.708 20.2358C388.69 20.2358 387.855 20.3601 387.204 20.6087C386.565 20.8454 386.091 21.1709 385.784 21.5852C385.476 21.9995 385.316 22.473 385.304 23.0057C385.28 23.4437 385.357 23.8402 385.535 24.1953C385.724 24.5386 386.02 24.8523 386.423 25.1364C386.825 25.4086 387.34 25.6572 387.968 25.8821C388.595 26.107 389.341 26.3082 390.205 26.4858L393.188 27.125C395.2 27.5511 396.922 28.1134 398.355 28.8118C399.787 29.5102 400.959 30.3329 401.87 31.2798C402.782 32.215 403.45 33.2685 403.877 34.4403C404.315 35.6122 404.539 36.8906 404.551 38.2756C404.539 40.6667 403.942 42.6908 402.758 44.348C401.574 46.0052 399.882 47.2659 397.68 48.13C395.49 48.9941 392.856 49.4261 389.779 49.4261C386.618 49.4261 383.86 48.9586 381.504 48.0234C379.161 47.0883 377.338 45.6501 376.036 43.7088C374.745 41.7557 374.094 39.258 374.083 36.2159H383.458C383.517 37.3286 383.795 38.2637 384.292 39.0213C384.789 39.7789 385.488 40.353 386.387 40.7436C387.299 41.1342 388.382 41.3295 389.637 41.3295C390.69 41.3295 391.572 41.1993 392.282 40.9389C392.992 40.6785 393.531 40.3175 393.898 39.8558C394.265 39.3942 394.454 38.8674 394.466 38.2756C394.454 37.7192 394.271 37.2339 393.916 36.8196C393.572 36.3935 393.004 36.0147 392.211 35.6832C391.418 35.34 390.347 35.0204 388.997 34.7244L385.375 33.9432C382.155 33.2448 379.616 32.0788 377.758 30.4453C375.911 28.8 374.994 26.5568 375.006 23.7159C374.994 21.4077 375.61 19.3894 376.852 17.6612C378.107 15.9212 379.841 14.5658 382.055 13.5952C384.28 12.6245 386.831 12.1392 389.708 12.1392C392.643 12.1392 395.182 12.6304 397.325 13.6129C399.467 14.5954 401.119 15.9804 402.279 17.7678C403.45 19.5433 404.042 21.6207 404.054 24H394.608Z"
-              fill="white"
-            />
-            <path d="M18.5 49L42 11L31.5 49L18.5 49Z" fill="white" />
-            <path d="M42 11L18.5 49L29 11H42Z" fill="white" />
-            <path d="M0 49L23.5 11L13 49L0 49Z" fill="white" />
-            <path d="M23.5 11L0 49L10.5 11H23.5Z" fill="white" />
-          </svg>
+
+
+      </div>
+    </article>
+
+  </section>
+
+
+
+
+  <!-- noticias internacionales-->
+  <section id='section-noticias-internacionales' class="  min-h-screen pt-[40px] lg:px-20 md:px-16 px-8 bg-slate-100">
+
+
+    <article class="py-14">
+      <h2 class="  text-3xl font-black pb-5">Noticias Internacionales</h2>
+
+      <div id='contenedor-noticias-internacionales' class="grid grid-cols-1  lg:grid-cols-4 md:grid-cols-2 gap-6 ">
+
+        <div class="flex justify-center h-52 items-center w-full bg-white ">
+          <img src="../assets/img/22.gif" alt="" class="w-20" />
         </div>
-        <!-- <div>
+        <div class="flex justify-center h-52 items-center w-full bg-white ">
+          <img src="../assets/img/22.gif" alt="" class="w-20" />
+        </div>
+        <div class="flex justify-center h-52 items-center w-full bg-white ">
+          <img src="../assets/img/22.gif" alt="" class="w-20" />
+        </div>
+        <div class="flex justify-center h-52 items-center w-full bg-white ">
+          <img src="../assets/img/22.gif" alt="" class="w-20" />
+        </div>
+        <div class="flex justify-center h-52 items-center w-full bg-white ">
+          <img src="../assets/img/22.gif" alt="" class="w-20" />
+        </div>
+        <div class="flex justify-center h-52 items-center w-full bg-white ">
+          <img src="../assets/img/22.gif" alt="" class="w-20" />
+        </div>
+        <div class="flex justify-center h-52 items-center w-full bg-white ">
+          <img src="../assets/img/22.gif" alt="" class="w-20" />
+        </div>
+        <div class="flex justify-center h-52 items-center w-full bg-white ">
+          <img src="../assets/img/22.gif" alt="" class="w-20" />
+        </div>
+
+      </div>
+    </article>
+
+  </section>
+
+
+  <section id="section-newsletter"
+    class="flex flex-col justify-center items-center  md:h-[435px] bg-blue-400 py-14 md:py-0 lg:px-20 md:px-16 px-8">
+    <!-- Newsletter -->
+
+    <h2 class="text-3xl text-white font-black  pb-2 ">Newsletter</h2>
+    <h3 class="text-white text-center font-extralight text-md pb-10 ">Suscríbete a nuestro newsletter y
+      entérate de todas las
+      noticias y actualidad.</h3>
+    <div id="form" class="flex justify-center bg-white p-6 bg-opacity-20 rounded-lg">
+      <form action="" class="flex flex-col md:flex-row gap-3">
+        <input id="name-form" type="text" placeholder="Nombre" class="py-3 pl-5">
+        <input id="last-name-form" type="text" placeholder="Apellidos" class="py-3 pl-5">
+        <input id="email-form" type="email" placeholder="Tu correo" class="py-3 pl-5">
+        <div onclick=enviarFormulario() id="button-suscribe"
+          class="bg-red-500 cursor-pointer w-52 text-white text-center py-3 hover:bg-red-400 transition-all duration-500">
+          Suscríbete</div>
+
+      </form>
+
+    </div>
+
+
+  </section>
+  <div id="top-globalnews"
+    class="text-white font-bold bg-red-500 h-20 flex flex-row justify-center items-center lg:px-20 md:px-16 px-8 transition-all duration-700 ">
+    <div class="flex">
+      <svg class="w-52" width="408" height="61" viewBox="0 0 408 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M69.9588 24.6392C69.8049 24.0118 69.5623 23.4614 69.2308 22.9879C68.8994 22.5026 68.4851 22.0942 67.9879 21.7628C67.5026 21.4195 66.9344 21.165 66.2834 20.9993C65.6442 20.8217 64.9399 20.733 64.1705 20.733C62.5133 20.733 61.0987 21.1295 59.9268 21.9226C58.7668 22.7157 57.879 23.858 57.2635 25.3494C56.6598 26.8409 56.358 28.6402 56.358 30.7472C56.358 32.8778 56.648 34.7008 57.228 36.2159C57.808 37.7311 58.6721 38.8911 59.8203 39.696C60.9685 40.5009 62.3949 40.9034 64.0994 40.9034C65.6027 40.9034 66.8516 40.6844 67.8459 40.2464C68.852 39.8085 69.6037 39.187 70.1009 38.3821C70.598 37.5772 70.8466 36.6302 70.8466 35.5412L72.5511 35.7188H64.2415V28.6875H80.3636V33.7301C80.3636 37.0445 79.6593 39.8795 78.2507 42.2351C76.8539 44.5788 74.9245 46.3781 72.4624 47.6328C70.0121 48.8757 67.2008 49.4972 64.0284 49.4972C60.4891 49.4972 57.3819 48.7455 54.7067 47.2422C52.0315 45.7389 49.9422 43.5964 48.4389 40.8146C46.9474 38.0329 46.2017 34.7244 46.2017 30.8892C46.2017 27.8826 46.6574 25.2192 47.5689 22.8991C48.4922 20.5791 49.7706 18.62 51.4041 17.022C53.0376 15.4122 54.9257 14.1989 57.0682 13.3821C59.2107 12.5535 61.5071 12.1392 63.9574 12.1392C66.1117 12.1392 68.1122 12.447 69.9588 13.0625C71.8172 13.6662 73.4567 14.5303 74.8771 15.6548C76.3094 16.7675 77.4635 18.0874 78.3395 19.6143C79.2154 21.1413 79.7481 22.8163 79.9375 24.6392H69.9588ZM84.9668 49V12.6364H94.839V41.0455H109.541V49H84.9668ZM147.343 30.8182C147.343 34.8665 146.555 38.2815 144.981 41.0632C143.407 43.8331 141.282 45.9342 138.607 47.3665C135.932 48.7869 132.949 49.4972 129.658 49.4972C126.343 49.4972 123.349 48.781 120.673 47.3487C118.01 45.9046 115.891 43.7976 114.317 41.0277C112.754 38.246 111.973 34.8428 111.973 30.8182C111.973 26.7699 112.754 23.3608 114.317 20.5909C115.891 17.8092 118.01 15.7081 120.673 14.2876C123.349 12.8553 126.343 12.1392 129.658 12.1392C132.949 12.1392 135.932 12.8553 138.607 14.2876C141.282 15.7081 143.407 17.8092 144.981 20.5909C146.555 23.3608 147.343 26.7699 147.343 30.8182ZM137.186 30.8182C137.186 28.6402 136.896 26.8054 136.316 25.3139C135.748 23.8106 134.902 22.6742 133.777 21.9048C132.664 21.1236 131.291 20.733 129.658 20.733C128.024 20.733 126.645 21.1236 125.521 21.9048C124.408 22.6742 123.562 23.8106 122.982 25.3139C122.414 26.8054 122.129 28.6402 122.129 30.8182C122.129 32.9962 122.414 34.8369 122.982 36.3402C123.562 37.8317 124.408 38.968 125.521 39.7493C126.645 40.5187 128.024 40.9034 129.658 40.9034C131.291 40.9034 132.664 40.5187 133.777 39.7493C134.902 38.968 135.748 37.8317 136.316 36.3402C136.896 34.8369 137.186 32.9962 137.186 30.8182ZM151.91 49V12.6364H167.677C170.447 12.6364 172.773 13.0092 174.655 13.755C176.549 14.5007 177.975 15.5542 178.934 16.9155C179.905 18.2768 180.39 19.8807 180.39 21.7273C180.39 23.0649 180.094 24.2841 179.502 25.3849C178.922 26.4858 178.106 27.4091 177.052 28.1548C175.999 28.8887 174.768 29.3977 173.359 29.6818V30.0369C174.922 30.0961 176.342 30.4927 177.62 31.2266C178.899 31.9486 179.917 32.9489 180.674 34.2273C181.432 35.4938 181.811 36.9853 181.811 38.7017C181.811 40.6903 181.29 42.46 180.248 44.0107C179.218 45.5613 177.751 46.7805 175.845 47.6683C173.939 48.5561 171.666 49 169.027 49H151.91ZM161.782 41.1165H166.399C168.056 41.1165 169.299 40.8087 170.127 40.1932C170.956 39.5658 171.37 38.6425 171.37 37.4233C171.37 36.571 171.175 35.849 170.784 35.2571C170.394 34.6652 169.837 34.2154 169.115 33.9077C168.405 33.5999 167.547 33.446 166.541 33.446H161.782V41.1165ZM161.782 27.3381H165.831C166.695 27.3381 167.458 27.2019 168.121 26.9297C168.784 26.6574 169.299 26.2668 169.666 25.7578C170.045 25.237 170.234 24.6037 170.234 23.858C170.234 22.7334 169.832 21.8752 169.027 21.2834C168.222 20.6797 167.204 20.3778 165.973 20.3778H161.782V27.3381ZM194.755 49H184.101L196.104 12.6364H209.598L221.601 49H210.948L202.993 22.6506H202.709L194.755 49ZM192.766 34.6534H212.794V42.0398H192.766V34.6534ZM225.104 49V12.6364H234.976V41.0455H249.677V49H225.104ZM285.131 12.6364V49H276.892L263.753 29.8949H263.54V49H253.668V12.6364H262.049L274.975 31.6705H275.259V12.6364H285.131ZM289.801 49V12.6364H316.008V20.5909H299.673V26.8409H314.659V34.7955H299.673V41.0455H315.937V49H289.801ZM330.137 49L319.413 12.6364H330.421L335.393 35.0085H335.677L341.572 12.6364H350.237L356.132 35.0795H356.416L361.387 12.6364H372.396L361.671 49H352.225L346.046 28.6875H345.762L339.583 49H330.137ZM394.608 24C394.513 22.8163 394.07 21.893 393.276 21.2301C392.495 20.5672 391.306 20.2358 389.708 20.2358C388.69 20.2358 387.855 20.3601 387.204 20.6087C386.565 20.8454 386.091 21.1709 385.784 21.5852C385.476 21.9995 385.316 22.473 385.304 23.0057C385.28 23.4437 385.357 23.8402 385.535 24.1953C385.724 24.5386 386.02 24.8523 386.423 25.1364C386.825 25.4086 387.34 25.6572 387.968 25.8821C388.595 26.107 389.341 26.3082 390.205 26.4858L393.188 27.125C395.2 27.5511 396.922 28.1134 398.355 28.8118C399.787 29.5102 400.959 30.3329 401.87 31.2798C402.782 32.215 403.45 33.2685 403.877 34.4403C404.315 35.6122 404.539 36.8906 404.551 38.2756C404.539 40.6667 403.942 42.6908 402.758 44.348C401.574 46.0052 399.882 47.2659 397.68 48.13C395.49 48.9941 392.856 49.4261 389.779 49.4261C386.618 49.4261 383.86 48.9586 381.504 48.0234C379.161 47.0883 377.338 45.6501 376.036 43.7088C374.745 41.7557 374.094 39.258 374.083 36.2159H383.458C383.517 37.3286 383.795 38.2637 384.292 39.0213C384.789 39.7789 385.488 40.353 386.387 40.7436C387.299 41.1342 388.382 41.3295 389.637 41.3295C390.69 41.3295 391.572 41.1993 392.282 40.9389C392.992 40.6785 393.531 40.3175 393.898 39.8558C394.265 39.3942 394.454 38.8674 394.466 38.2756C394.454 37.7192 394.271 37.2339 393.916 36.8196C393.572 36.3935 393.004 36.0147 392.211 35.6832C391.418 35.34 390.347 35.0204 388.997 34.7244L385.375 33.9432C382.155 33.2448 379.616 32.0788 377.758 30.4453C375.911 28.8 374.994 26.5568 375.006 23.7159C374.994 21.4077 375.61 19.3894 376.852 17.6612C378.107 15.9212 379.841 14.5658 382.055 13.5952C384.28 12.6245 386.831 12.1392 389.708 12.1392C392.643 12.1392 395.182 12.6304 397.325 13.6129C399.467 14.5954 401.119 15.9804 402.279 17.7678C403.45 19.5433 404.042 21.6207 404.054 24H394.608Z"
+          fill="white" />
+        <path d="M18.5 49L42 11L31.5 49L18.5 49Z" fill="white" />
+        <path d="M42 11L18.5 49L29 11H42Z" fill="white" />
+        <path d="M0 49L23.5 11L13 49L0 49Z" fill="white" />
+        <path d="M23.5 11L0 49L10.5 11H23.5Z" fill="white" />
+      </svg>
+    </div>
+    <!-- <div>
           <p>21 de octubre 2024</p>
         </div> -->
-        </div>
+  </div>
 
-    <footer class="bg-black text-white py-6">
-      <div
-        class="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center space-y-6 md:space-y-0"
-      >
-        <div
-          class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-12"
-        >
-          <div class="space-y-2">
-            <a href="#" class="hover:underline">Sobre ALLEUNEWS</a>
-            <a href="#" class="hover:underline">Cookies</a>
-            <a href="#" class="hover:underline">Política de privacidad</a>
-          </div>
-
-          <div class="space-y-2">
-            <a href="#" class="hover:underline">Términos de uso</a>
-            <a href="#" class="hover:underline">Aviso legal</a>
-            <a href="#" class="hover:underline">Contacto</a>
-          </div>
-        </div>
-
-        <div class="flex space-x-4">
-          <a href="#" class="text-red-500"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="text-red-500"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="text-red-500"><i class="fab fa-youtube"></i></a>
-          <a href="#" class="text-red-500"><i class="fab fa-twitter"></i></a>
-        </div>
+  <footer class="bg-black text-white py-6 min-h-56">
+    <div class="flex flex-col  lg:flex-row justify-between lg:px-20 md:px-16 px-8 ">
+      <div class="flex flex-col justify-center w-full ">
+        <ul class="flex gap-5">
+          <a href="#">
+            <li class="py-3 text-center lg:text-start">Sobre GlobalNews</li>
+          </a>
+          <a href="#">
+            <li class="py-3 text-center lg:text-start">Política de cookies</li>
+          </a>
+          <a href="#">
+            <li class="py-3 text-center lg:text-start">Polìtica de privacidad</li>
+          </a>
+        </ul>
       </div>
-
-      <div class="container mx-auto text-center mt-6">
-        <p class="text-sm">&copy; Copyright Globalnews.com 2024</p>
+      <div class="flex items-center justify-center">
+        <svg class="w-52" width="408" height="61" viewBox="0 0 408 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M69.9588 24.6392C69.8049 24.0118 69.5623 23.4614 69.2308 22.9879C68.8994 22.5026 68.4851 22.0942 67.9879 21.7628C67.5026 21.4195 66.9344 21.165 66.2834 20.9993C65.6442 20.8217 64.9399 20.733 64.1705 20.733C62.5133 20.733 61.0987 21.1295 59.9268 21.9226C58.7668 22.7157 57.879 23.858 57.2635 25.3494C56.6598 26.8409 56.358 28.6402 56.358 30.7472C56.358 32.8778 56.648 34.7008 57.228 36.2159C57.808 37.7311 58.6721 38.8911 59.8203 39.696C60.9685 40.5009 62.3949 40.9034 64.0994 40.9034C65.6027 40.9034 66.8516 40.6844 67.8459 40.2464C68.852 39.8085 69.6037 39.187 70.1009 38.3821C70.598 37.5772 70.8466 36.6302 70.8466 35.5412L72.5511 35.7188H64.2415V28.6875H80.3636V33.7301C80.3636 37.0445 79.6593 39.8795 78.2507 42.2351C76.8539 44.5788 74.9245 46.3781 72.4624 47.6328C70.0121 48.8757 67.2008 49.4972 64.0284 49.4972C60.4891 49.4972 57.3819 48.7455 54.7067 47.2422C52.0315 45.7389 49.9422 43.5964 48.4389 40.8146C46.9474 38.0329 46.2017 34.7244 46.2017 30.8892C46.2017 27.8826 46.6574 25.2192 47.5689 22.8991C48.4922 20.5791 49.7706 18.62 51.4041 17.022C53.0376 15.4122 54.9257 14.1989 57.0682 13.3821C59.2107 12.5535 61.5071 12.1392 63.9574 12.1392C66.1117 12.1392 68.1122 12.447 69.9588 13.0625C71.8172 13.6662 73.4567 14.5303 74.8771 15.6548C76.3094 16.7675 77.4635 18.0874 78.3395 19.6143C79.2154 21.1413 79.7481 22.8163 79.9375 24.6392H69.9588ZM84.9668 49V12.6364H94.839V41.0455H109.541V49H84.9668ZM147.343 30.8182C147.343 34.8665 146.555 38.2815 144.981 41.0632C143.407 43.8331 141.282 45.9342 138.607 47.3665C135.932 48.7869 132.949 49.4972 129.658 49.4972C126.343 49.4972 123.349 48.781 120.673 47.3487C118.01 45.9046 115.891 43.7976 114.317 41.0277C112.754 38.246 111.973 34.8428 111.973 30.8182C111.973 26.7699 112.754 23.3608 114.317 20.5909C115.891 17.8092 118.01 15.7081 120.673 14.2876C123.349 12.8553 126.343 12.1392 129.658 12.1392C132.949 12.1392 135.932 12.8553 138.607 14.2876C141.282 15.7081 143.407 17.8092 144.981 20.5909C146.555 23.3608 147.343 26.7699 147.343 30.8182ZM137.186 30.8182C137.186 28.6402 136.896 26.8054 136.316 25.3139C135.748 23.8106 134.902 22.6742 133.777 21.9048C132.664 21.1236 131.291 20.733 129.658 20.733C128.024 20.733 126.645 21.1236 125.521 21.9048C124.408 22.6742 123.562 23.8106 122.982 25.3139C122.414 26.8054 122.129 28.6402 122.129 30.8182C122.129 32.9962 122.414 34.8369 122.982 36.3402C123.562 37.8317 124.408 38.968 125.521 39.7493C126.645 40.5187 128.024 40.9034 129.658 40.9034C131.291 40.9034 132.664 40.5187 133.777 39.7493C134.902 38.968 135.748 37.8317 136.316 36.3402C136.896 34.8369 137.186 32.9962 137.186 30.8182ZM151.91 49V12.6364H167.677C170.447 12.6364 172.773 13.0092 174.655 13.755C176.549 14.5007 177.975 15.5542 178.934 16.9155C179.905 18.2768 180.39 19.8807 180.39 21.7273C180.39 23.0649 180.094 24.2841 179.502 25.3849C178.922 26.4858 178.106 27.4091 177.052 28.1548C175.999 28.8887 174.768 29.3977 173.359 29.6818V30.0369C174.922 30.0961 176.342 30.4927 177.62 31.2266C178.899 31.9486 179.917 32.9489 180.674 34.2273C181.432 35.4938 181.811 36.9853 181.811 38.7017C181.811 40.6903 181.29 42.46 180.248 44.0107C179.218 45.5613 177.751 46.7805 175.845 47.6683C173.939 48.5561 171.666 49 169.027 49H151.91ZM161.782 41.1165H166.399C168.056 41.1165 169.299 40.8087 170.127 40.1932C170.956 39.5658 171.37 38.6425 171.37 37.4233C171.37 36.571 171.175 35.849 170.784 35.2571C170.394 34.6652 169.837 34.2154 169.115 33.9077C168.405 33.5999 167.547 33.446 166.541 33.446H161.782V41.1165ZM161.782 27.3381H165.831C166.695 27.3381 167.458 27.2019 168.121 26.9297C168.784 26.6574 169.299 26.2668 169.666 25.7578C170.045 25.237 170.234 24.6037 170.234 23.858C170.234 22.7334 169.832 21.8752 169.027 21.2834C168.222 20.6797 167.204 20.3778 165.973 20.3778H161.782V27.3381ZM194.755 49H184.101L196.104 12.6364H209.598L221.601 49H210.948L202.993 22.6506H202.709L194.755 49ZM192.766 34.6534H212.794V42.0398H192.766V34.6534ZM225.104 49V12.6364H234.976V41.0455H249.677V49H225.104ZM285.131 12.6364V49H276.892L263.753 29.8949H263.54V49H253.668V12.6364H262.049L274.975 31.6705H275.259V12.6364H285.131ZM289.801 49V12.6364H316.008V20.5909H299.673V26.8409H314.659V34.7955H299.673V41.0455H315.937V49H289.801ZM330.137 49L319.413 12.6364H330.421L335.393 35.0085H335.677L341.572 12.6364H350.237L356.132 35.0795H356.416L361.387 12.6364H372.396L361.671 49H352.225L346.046 28.6875H345.762L339.583 49H330.137ZM394.608 24C394.513 22.8163 394.07 21.893 393.276 21.2301C392.495 20.5672 391.306 20.2358 389.708 20.2358C388.69 20.2358 387.855 20.3601 387.204 20.6087C386.565 20.8454 386.091 21.1709 385.784 21.5852C385.476 21.9995 385.316 22.473 385.304 23.0057C385.28 23.4437 385.357 23.8402 385.535 24.1953C385.724 24.5386 386.02 24.8523 386.423 25.1364C386.825 25.4086 387.34 25.6572 387.968 25.8821C388.595 26.107 389.341 26.3082 390.205 26.4858L393.188 27.125C395.2 27.5511 396.922 28.1134 398.355 28.8118C399.787 29.5102 400.959 30.3329 401.87 31.2798C402.782 32.215 403.45 33.2685 403.877 34.4403C404.315 35.6122 404.539 36.8906 404.551 38.2756C404.539 40.6667 403.942 42.6908 402.758 44.348C401.574 46.0052 399.882 47.2659 397.68 48.13C395.49 48.9941 392.856 49.4261 389.779 49.4261C386.618 49.4261 383.86 48.9586 381.504 48.0234C379.161 47.0883 377.338 45.6501 376.036 43.7088C374.745 41.7557 374.094 39.258 374.083 36.2159H383.458C383.517 37.3286 383.795 38.2637 384.292 39.0213C384.789 39.7789 385.488 40.353 386.387 40.7436C387.299 41.1342 388.382 41.3295 389.637 41.3295C390.69 41.3295 391.572 41.1993 392.282 40.9389C392.992 40.6785 393.531 40.3175 393.898 39.8558C394.265 39.3942 394.454 38.8674 394.466 38.2756C394.454 37.7192 394.271 37.2339 393.916 36.8196C393.572 36.3935 393.004 36.0147 392.211 35.6832C391.418 35.34 390.347 35.0204 388.997 34.7244L385.375 33.9432C382.155 33.2448 379.616 32.0788 377.758 30.4453C375.911 28.8 374.994 26.5568 375.006 23.7159C374.994 21.4077 375.61 19.3894 376.852 17.6612C378.107 15.9212 379.841 14.5658 382.055 13.5952C384.28 12.6245 386.831 12.1392 389.708 12.1392C392.643 12.1392 395.182 12.6304 397.325 13.6129C399.467 14.5954 401.119 15.9804 402.279 17.7678C403.45 19.5433 404.042 21.6207 404.054 24H394.608Z"
+            fill="white" />
+          <path d="M18.5 49L42 11L31.5 49L18.5 49Z" fill="white" />
+          <path d="M42 11L18.5 49L29 11H42Z" fill="white" />
+          <path d="M0 49L23.5 11L13 49L0 49Z" fill="white" />
+          <path d="M23.5 11L0 49L10.5 11H23.5Z" fill="white" />
+        </svg>
       </div>
-    </footer>
-  </body>
+      <div class="flex flex-row lg:justify-end  justify-center w-full">
+        <ul class="flex flex-row justify-end items-center py-5">
+          <li class="px-2">
+            <svg width="55" height="" viewBox="0 0 95 98" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M94.8917 48.7198C94.8917 73.3252 77.1275 93.6665 54.0521 96.9683C51.8937 97.2769 49.6862 97.4368 47.4459 97.4368C44.8586 97.4368 42.3204 97.2236 39.8451 96.814C17.256 93.0801 0 72.9661 0 48.717C0 21.8113 21.2422 0 47.4459 0C73.6495 0 94.8917 21.8113 94.8917 48.717V48.7198Z"
+                fill="#EF4444" />
+              <path
+                d="M54.0521 39.1173V49.7297H66.8384L64.8139 64.0284H54.0521V96.9683C51.8937 97.2769 49.6862 97.4368 47.4459 97.4368C44.8585 97.4368 42.3204 97.2236 39.8451 96.814V64.0284H28.0533V49.7297H39.8451V36.7468C39.8451 28.6899 46.2055 22.1564 54.0548 22.1564V22.1648C54.0767 22.1648 54.0985 22.1564 54.1204 22.1564H66.8411V34.5194H58.53C56.0575 34.5194 54.0548 36.5757 54.0548 39.1145L54.0521 39.1173Z"
+                fill="white" />
+            </svg>
 
-  <!-- Llamado a los scripts JS -->
-  <script src="../js/fetch.js"></script>
-  <script src="../js/menu.js"></script>
-  <script src="../js/form.js"></script>
-  
+          </li>
+          <li class="px-2">
+            <svg width="55" height="" viewBox="0 0 96 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M95.3083 48.7198C95.3083 73.3252 77.5441 93.6665 54.4687 96.9683C52.3103 97.2769 50.1028 97.4368 47.8625 97.4368C45.2752 97.4368 42.737 97.2236 40.2617 96.814C17.6727 93.0801 0.416626 72.9661 0.416626 48.717C0.416626 21.8113 21.6588 0 47.8625 0C74.0662 0 95.3083 21.8113 95.3083 48.717V48.7198Z"
+                fill="#EF4444" />
+              <path
+                d="M78.0141 38.5336C77.6398 34.7969 76.8284 30.6703 73.8449 28.499C71.5308 26.8158 68.4927 26.7541 65.6568 26.7569C59.6598 26.7625 53.6628 26.7682 47.6658 26.7738C41.8983 26.7794 36.1309 26.785 30.3634 26.7906C27.9537 26.7906 25.6122 26.5998 23.3746 27.6686C21.4512 28.5888 19.9486 30.3365 19.047 32.2806C17.7902 34.9877 17.5252 38.0511 17.3749 41.0444C17.0963 46.4923 17.1263 51.957 17.4624 57.3993C17.7055 61.3744 18.3257 65.7647 21.3174 68.2979C23.9702 70.5422 27.7132 70.6516 31.1502 70.6544C42.0677 70.6628 52.9853 70.6712 63.9028 70.6824C65.3016 70.6824 66.7633 70.6572 68.1894 70.4973C70.9981 70.1859 73.6728 69.3611 75.476 67.2263C77.2956 65.0746 77.7628 62.0758 78.0415 59.2396C78.7136 52.361 78.7053 45.4094 78.0141 38.5336ZM41.3519 58.3671V39.0722L57.6271 48.7197L41.3519 58.3671Z"
+                fill="white" />
+            </svg>
+          </li>
+          <li class="px-2">
+            <svg width="55" height="" viewBox="0 0 96 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M95.249 48.7198C95.249 73.3252 77.4848 93.6665 54.4094 96.9683C52.251 97.2769 50.0435 97.4368 47.8032 97.4368C45.2159 97.4368 42.6777 97.2236 40.2024 96.814C17.6133 93.0801 0.3573 72.9661 0.3573 48.717C0.3573 21.8113 21.5995 0 47.8032 0C74.0068 0 95.249 21.8113 95.249 48.717V48.7198Z"
+                fill="#EF4444" />
+              <path
+                d="M62.6605 19.4744H32.9433C24.7333 19.4744 18.056 26.3306 18.056 34.7606V62.6762C18.056 71.1061 24.7333 77.9623 32.9433 77.9623H62.6605C70.8704 77.9623 77.5477 71.1061 77.5477 62.6762V34.7606C77.5477 26.3306 70.8704 19.4744 62.6605 19.4744ZM23.3071 34.7606C23.3071 29.3042 27.6293 24.8662 32.9433 24.8662H62.6605C67.9744 24.8662 72.2966 29.3042 72.2966 34.7606V62.6762C72.2966 68.1325 67.9744 72.5705 62.6605 72.5705H32.9433C27.6293 72.5705 23.3071 68.1325 23.3071 62.6762V34.7606Z"
+                fill="white" />
+              <path
+                d="M47.8007 62.9399C55.4369 62.9399 61.6497 56.5606 61.6497 48.7198C61.6497 40.879 55.4369 34.4997 47.8007 34.4997C40.1644 34.4997 33.9515 40.879 33.9515 48.7198C33.9515 56.5606 40.1644 62.9399 47.8007 62.9399ZM47.8007 39.8943C52.5409 39.8943 56.3959 43.8526 56.3959 48.7198C56.3959 53.587 52.5409 57.5453 47.8007 57.5453C43.0604 57.5453 39.2054 53.587 39.2054 48.7198C39.2054 43.8526 43.0604 39.8943 47.8007 39.8943Z"
+                fill="white" />
+              <path
+                d="M62.9338 36.7944C64.9911 36.7944 66.6659 35.0748 66.6659 32.9624C66.6659 30.85 64.9911 29.1303 62.9338 29.1303C60.8765 29.1303 59.2018 30.85 59.2018 32.9624C59.2018 35.0748 60.8765 36.7944 62.9338 36.7944Z"
+                fill="white" />
+            </svg>
+          </li>
+          <li class="px-2">
+            <svg width="55" height="" viewBox="0 0 95 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M94.8916 48.7198C94.8916 73.3252 77.1274 93.6665 54.052 96.9683C51.8937 97.2769 49.6861 97.4368 47.4457 97.4368C44.8584 97.4368 42.3203 97.2236 39.8451 96.814C17.256 93.0801 0 72.9661 0 48.717C0 21.8113 21.2421 0 47.4457 0C73.6494 0 94.8916 21.8113 94.8916 48.717V48.7198Z"
+                fill="#EF4444  " />
+              <path
+                d="M75.4908 30.8724C74.1739 32.2386 72.3488 33.083 70.327 33.083C70.0702 33.083 69.8135 33.0689 69.5649 33.0409C71.6741 31.742 73.3024 29.7082 74.1138 27.2816C74.1138 27.2816 74.1165 27.2816 74.1165 27.2788C74.2285 26.9534 74.3241 26.6251 74.4006 26.2857C72.7313 28.1176 70.45 29.3575 67.89 29.6521C67.4966 29.6998 67.0977 29.7222 66.6934 29.7222C66.5649 29.7222 66.442 29.7194 66.319 29.711C65.4529 28.7768 64.4203 28.0054 63.2756 27.4387C61.9997 26.7991 60.5734 26.4232 59.068 26.3755C58.9451 26.3671 58.8222 26.3643 58.6938 26.3643C57.4179 26.3643 56.1939 26.5971 55.0628 27.0263C54.7732 27.1357 54.4918 27.2535 54.2158 27.391C50.6313 29.1163 48.1505 32.8557 48.1505 37.1899C48.1505 38.0792 48.2571 38.9433 48.4511 39.768C47.3527 39.7231 46.2654 39.6137 45.1999 39.451C44.8584 39.3949 44.5168 39.336 44.178 39.2687C41.4596 38.7497 38.8668 37.8576 36.4571 36.6457C34.3015 35.5629 32.2907 34.2275 30.4629 32.6734C28.9247 31.3717 27.5177 29.9186 26.2609 28.3308C26.2063 28.2634 26.1516 28.1933 26.0997 28.126C26.0259 28.241 25.9577 28.356 25.8975 28.4767C25.0178 30.056 24.5206 31.8823 24.5206 33.8292C24.5206 33.8881 24.5205 33.9526 24.5232 34.0115C24.5451 35.4703 24.8456 36.8589 25.3838 38.1213C25.6133 38.6824 25.8921 39.2126 26.2117 39.7147C27.1543 41.2043 28.441 42.4443 29.9601 43.3027C30.0284 43.3476 30.0994 43.3841 30.1705 43.4177C30.0612 43.4402 29.9492 43.4598 29.8372 43.471C29.5258 43.5131 29.2034 43.5355 28.881 43.5355C27.2636 43.5355 25.7582 43.0166 24.526 42.1329C24.5178 42.2255 24.5177 42.3209 24.5177 42.4162C24.5177 45.5077 25.78 48.2962 27.8018 50.2627C29.3754 51.8056 31.4109 52.8408 33.6731 53.1437C32.8589 53.4495 31.9791 53.615 31.0639 53.615C30.0721 53.615 29.1213 53.4215 28.2525 53.0652C29.5475 57.3882 33.4081 60.5582 38.009 60.6984C35.1977 63.6973 31.2496 65.56 26.881 65.56C24.1653 65.56 21.6135 64.8391 19.4005 63.5767C24.7199 68.3036 31.6567 71.1594 39.2438 71.1594C56.0107 71.1594 69.6004 57.2058 69.6004 39.9896C69.6004 39.0414 69.5593 38.1045 69.4774 37.1787C72.2505 36.0538 74.4499 33.7562 75.4908 30.8752V30.8724Z"
+                fill="white" />
+            </svg>
+
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="container mx-auto text-center mt-6">
+      <p class="text-sm">&copy; Copyright Globalnews.com 2024</p>
+    </div>
+  </footer>
+
+  <!-- Menu desplegado -->
+  <div id="menu-desplegado"
+    class=" fixed transition-all ease-in-out duration-500 top-[-200px] h-52 w-full bg-red-500 flex justify-center align-middle items-center ">
+    <ul class="text-3xl text-white flex flex-col justify-center">
+      <li onclick=checkScroll() id="mas-vistos-mobile"
+        class='hover:cursor-pointer  transition-all duration-200  py-1 font-bold'>
+        <a href="#section-lo-mas-visto">Lo más visto</a>
+      </li>
+      <li id="europa-mobile" class='hover:cursor-pointer   transition-all duration-200  py-1 font-bold '>
+        <a href="#section-noticias-de-europa">Europa</a>
+
+      </li>
+      <li id="internacional-mobile" class='hover:cursor-pointer  transition-all duration-200  py-1 font-bold '>
+        <a href="#section-noticias-internacionales">Internacional
+        </a>
+      </li>
+      <li id="newsletter-mobile" class='hover:cursor-pointer   transition-all duration-200  py-1 font-bold '>
+        <a href="#section-newsletter">Newsletter
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+
+<!-- Llamado a los scripts JS -->
+<script src="../js/fetch.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/form.js"></script>
+<script src="../js/menu-burger.js"></script>
+
 </html>
