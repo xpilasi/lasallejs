@@ -29,8 +29,8 @@ const handleScroll = ()=>{
         
         
        //Nav
-        nav.classList.remove('h-14')
-        nav.classList.add('h-10')
+        nav.classList.remove('lg:h-14')
+        nav.classList.add('lg:h-10')
 
     
         
@@ -53,8 +53,8 @@ const handleScroll = ()=>{
         liNewsletter.classList.remove('py-2')
 
         //Altura de la nav
-        nav.classList.add('h-14')
-        nav.classList.remove('h-10')
+        nav.classList.add('lg:h-14')
+        nav.classList.remove('lg:h-10')
        
 
         //Hidden del top
