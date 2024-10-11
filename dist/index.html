@@ -75,10 +75,10 @@
   <section id='section-lo-mas-visto' class="  min-h-[calc(100vh-6rem)] pt-[56px] lg:px-20 md:px-16 px-8 bg-slate-100">
 
 
-    <article class="py-5">
+    <article class="py-10 md:py-14">
       <h2 class="text-3xl font-black pb-5">Lo más visto</h2>
 
-      <div id='contenedor-noticias-mas-vistas' class="grid grid-cols-1 gap-6 lg:grid-cols-4 md:grid-cols-2 p-3">
+      <div id='contenedor-noticias-mas-vistas' class="grid grid-cols-1 gap-6 lg:grid-cols-4 md:grid-cols-2">
 
         <div class="flex justify-center h-52 items-center w-full bg-white ">
           <img src="../assets/img/22.gif" alt="" class="w-20" />
@@ -117,7 +117,7 @@
     <article class="py-5">
       <h2 class="text-3xl font-black pb-5">Noticias de Europa</h2>
 
-      <div id='contenedor-noticias-europa' class="grid grid-cols-1 gap-6 lg:grid-cols-4 md:grid-cols-2 p-3  ">
+      <div id='contenedor-noticias-europa' class="grid grid-cols-1 gap-6 lg:grid-cols-4 md:grid-cols-2">
 
         <div class="lg:grid item ">
           <div class="flex justify-center lg:h-[392px] h-72 items-center w-full bg-white ">
@@ -190,17 +190,18 @@
 
 
   <section id="section-newsletter"
-    class="flex flex-col justify-center items-center min-h-screen bg-blue-400 lg:px-20 md:px-16 px-8">
+    class="flex flex-col justify-center items-center md:h-[435px] bg-blue-400 py-14 md:py-0 lg:px-20 md:px-16 px-8">
     <!-- Newsletter -->
 
     <h2 class="text-3xl text-white font-black  pb-2 ">Newsletter</h2>
-    <h3 class="text-white font-extralight text-md pb-10 ">Suscríbete a nuestro newsletter y entérate de todas las
+    <h3 class="text-white text-center font-extralight text-md pb-10 ">Suscríbete a nuestro newsletter y
+      entérate de todas las
       noticias y actualidad.</h3>
-    <div id="form" class="flex justify-center  ">
-      <form action="" class="flex flex-row">
-        <input id="name-form" type="text" placeholder="name" class="py-3 pl-5">
-        <input id="last-name-form" type="text" placeholder="lastName" class="py-3 pl-5">
-        <input id="email-form" type="email" placeholder="your@email.com" class="py-3 pl-5">
+    <div id="form" class="flex justify-center bg-white p-6 bg-opacity-20 rounded-lg">
+      <form action="" class="flex flex-col md:flex-row gap-3">
+        <input id="name-form" type="text" placeholder="Nombre" class="py-3 pl-5">
+        <input id="last-name-form" type="text" placeholder="Apellidos" class="py-3 pl-5">
+        <input id="email-form" type="email" placeholder="Tu correo" class="py-3 pl-5">
         <div onclick=enviarFormulario() id="button-suscribe"
           class="bg-red-500 cursor-pointer w-52 text-white text-center py-3 hover:bg-red-400 transition-all duration-500">
           Suscríbete</div>
