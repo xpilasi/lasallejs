@@ -1,6 +1,7 @@
 console.log('Menu burger');
 
 const menuDesplegado = document.getElementById('menu-desplegado')
+const linkMenuMobile = document.getElementById('news-mobile')
 
 
 const handleMenu = () => {
@@ -33,4 +34,8 @@ const closeBurgerMenuOnResize = () => {
     }
 }
 
+
+
 window.addEventListener("resize", closeBurgerMenuOnResize);
+//window.addEventListener("click", handleClickMenu());
+
