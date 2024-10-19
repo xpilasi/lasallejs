@@ -11,7 +11,7 @@
   <title>- GlobalNews -</title>
 </head>
 
-<body id="body" class=" text-black  ">
+<body id="body" class=" text-black relative">
 
   <header class="">
 
@@ -189,20 +189,24 @@
   </section>
 
 
-  <section id="section-newsletter" class="flex flex-col justify-center items-center py-40 bg-blue-400 lg:px-20 md:px-16 px-8">
+  <section id="section-newsletter"
+    class="flex flex-col justify-center items-center py-40 bg-blue-400 lg:px-20 md:px-16 px-8">
     <!-- Newsletter -->
     <h2 class="lg:text-6xl text text-5xl text-white font-black pb-2">Newsletter</h2>
-    <h3 class="text-white font-extralight text-md pb-10 lg:text-start text-center">Suscríbete a nuestro newsletter y entérate de todas las noticias y actualidad.</h3>
-    
+    <h3 class="text-white font-extralight text-md pb-10 lg:text-start text-center">Suscríbete a nuestro newsletter y
+      entérate de todas las noticias y actualidad.</h3>
+
     <div id="form" class="flex justify-center w-full ">
-      <form id="suscription-form" action="" class="flex flex-col lg:flex-row justify-center w-full gap-2 lg:gap-0" onsubmit="return enviarFormulario(event)">
-        <input id="name-form" type="text" placeholder="Nombre" class="py-3 pl-5 lg:w-52  w-full focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-        <input id="last-name-form" type="text" placeholder="Apellido" class="py-3 pl-5  lg:w-52  w-full focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-        <input id="email-form" type="email" placeholder="your@email.com" class="py-3 pl-5 lg:w-52  w-full  focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-        
-        <button 
-          id="button-suscribe" 
-          type="submit" 
+      <form id="suscription-form" action="" class="flex flex-col lg:flex-row justify-center w-full gap-2 lg:gap-0"
+        onsubmit="return enviarFormulario(event)">
+        <input id="name-form" type="text" placeholder="Nombre"
+          class="py-3 pl-5 lg:w-52  w-full focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        <input id="last-name-form" type="text" placeholder="Apellido"
+          class="py-3 pl-5  lg:w-52  w-full focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        <input id="email-form" type="email" placeholder="your@email.com"
+          class="py-3 pl-5 lg:w-52  w-full  focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+
+        <button id="button-suscribe" type="submit"
           class="bg-red-500 cursor-pointer lg:mt-0 mt-5 lg:w-52  w-full text-white text-center py-3 hover:bg-red-400 transition-all duration-500">
           Suscríbete
         </button>
@@ -317,6 +321,13 @@
       </li>
     </ul>
   </div>
+
+  <div id="popup" class="w-[450px] h-[150px] flex flex-col justify-center items-start border-top gap-3 py-4 px-10 border-t-2 border-red-400 border-solid
+    bg-white fixed right-0 bottom-[-150px] transition-all duration-300 ease-in-out">
+    <h3 class="text-2xl"><i class="fa-solid fa-circle-check pr-3 text-red-400"></i>Enviado</h3>
+    <span class="text-black">Los datos se han enviado correctamente</span>
+  </div>
+
 </body>
 
 <!-- Llamado a los scripts JS -->
