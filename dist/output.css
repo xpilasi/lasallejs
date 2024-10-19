@@ -858,11 +858,14 @@ video {
   padding: 1.25rem;
 }
 
+<<<<<<< HEAD
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
 
+=======
+>>>>>>> origin/dev-2
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -903,11 +906,14 @@ video {
   padding-bottom: 0.75rem;
 }
 
+<<<<<<< HEAD
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
+=======
+>>>>>>> origin/dev-2
 .py-40 {
   padding-top: 10rem;
   padding-bottom: 10rem;

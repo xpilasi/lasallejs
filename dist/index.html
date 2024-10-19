@@ -197,6 +197,7 @@
       entérate de todas las noticias y actualidad.</h3>
 
     <div id="form" class="flex justify-center w-full ">
+<<<<<<< HEAD
       <form id="suscription-form" action="" class="flex flex-col lg:flex-row justify-center w-full gap-2 lg:gap-0"
         onsubmit="return enviarFormulario(event)">
         <input id="name-form" type="text" placeholder="Nombre"
@@ -207,6 +208,17 @@
           class="py-3 pl-5 lg:w-52  w-full  focus:outline-none focus:ring-2 focus:ring-blue-500" required>
 
         <button id="button-suscribe" type="submit"
+=======
+      <form id="suscription-form" action="" class="flex flex-col lg:flex-row justify-center w-full gap-2 lg:gap-0" onsubmit="return enviarFormulario(event)">
+        <input id="name-form" type="text" placeholder="Nombre" class="py-3 pl-5 lg:w-52  w-full focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        <input id="last-name-form" type="text" placeholder="Apellido" class="py-3 pl-5  lg:w-52  w-full focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        <input id="email-form" type="email" placeholder="your@email.com" class="py-3 pl-5 lg:w-52  w-full  focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+        
+        <button 
+          onclick=grabarUsuarior()
+          id="button-suscribe" 
+          type="submit" 
+>>>>>>> origin/dev-2
           class="bg-red-500 cursor-pointer lg:mt-0 mt-5 lg:w-52  w-full text-white text-center py-3 hover:bg-red-400 transition-all duration-500">
           Suscríbete
         </button>
@@ -303,20 +315,20 @@
   <div id="menu-desplegado"
     class=" fixed transition-all ease-in-out duration-500 top-[-200px] h-52 w-full bg-red-500 flex justify-center align-middle items-center ">
     <ul class="text-3xl text-white flex flex-col justify-center">
-      <li onclick=checkScroll() id="mas-vistos-mobile"
+      <li id="news-mobile"
         class='hover:cursor-pointer  transition-all duration-200  py-1 font-bold'>
-        <a href="#section-lo-mas-visto">Lo más visto</a>
+        <a href="#section-lo-mas-visto" onclick=handleMenu()>Lo más visto</a>
       </li>
-      <li id="europa-mobile" class='hover:cursor-pointer   transition-all duration-200  py-1 font-bold '>
-        <a href="#section-noticias-de-europa">Europa</a>
+      <li id="news-mobile" class='hover:cursor-pointer   transition-all duration-200  py-1 font-bold '>
+        <a href="#section-noticias-de-europa" onclick=handleMenu()>Europa</a>
 
       </li>
-      <li id="internacional-mobile" class='hover:cursor-pointer  transition-all duration-200  py-1 font-bold '>
-        <a href="#section-noticias-internacionales">Internacional
+      <li id="news-mobile" class='hover:cursor-pointer  transition-all duration-200  py-1 font-bold '>
+        <a href="#section-noticias-internacionales" onclick=handleMenu()>Internacional
         </a>
       </li>
-      <li id="newsletter-mobile" class='hover:cursor-pointer   transition-all duration-200  py-1 font-bold '>
-        <a href="#section-newsletter">Newsletter
+      <li id="news-mobile" class='hover:cursor-pointer   transition-all duration-200  py-1 font-bold '>
+        <a href="#section-newsletter" onclick=handleMenu()>Newsletter
         </a>
       </li>
     </ul>
@@ -336,5 +348,6 @@
 <script src="../js/menu.js"></script>
 <script src="../js/form.js"></script>
 <script src="../js/menu-burger.js"></script>
+<script src="../js/firebase.js"></script>
 
 </html>
